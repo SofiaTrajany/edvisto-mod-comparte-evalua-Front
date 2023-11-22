@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Urbanist:wght@100&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /*1rem=10px*/
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-image: url(../img/background_book.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem;
+    color: #000;;
+    font-weight: 800;
+        
+}
+
+
+form{
+    margin: 0 auto;
+    /*max: width 60em;
+    min: width 35em;
+    width: 90vw;*/
+  }
+
+  
+fieldset{
+    border: none;
+    padding: 2rem 0;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+
+     
+label {
+    display: block;
+    margin: 1.2em 0;
+    text-align: center;
+    font-size: 1.8rem;
+    
+    
+}
+
+
+
+.inline{
+    border-color: #666;
+    width: 100%;
+    height: 2.3em;
+    border-radius:  5px;
+   
+}
+
+.inline:active{
+    border-color: rgba(115, 37, 241, 1) ;
+}
+
+#birthday{
+    width: 55%;
+    border-radius: 5px;
+    
+}
+
+.divBotonRegistrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrarse{
+    width: 30rem;
+    padding: 1.3rem;
+    font-weight: 600;
+    color:whitesmoke;
+    background: rgba(96.90, 0, 255, 0.80);
+    box-shadow: 6px 6px 6px -1px rgba(11, 0, 51, 0.40);
+    border-radius: 18px;
+    overflow: hidden;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
+    
+}

@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Urbanist:wght@100&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem=10px */
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-banner {
+  width: 100%;
+  height: 20%;
+  background: rgba(28, 187, 196, 0.3);
+  /*min-height: 10vh;*/
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 3%;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: bolder;
+}
+
+.saludoPerfil {
+  font-size: 1.8em;
+  font-weight: 1000;
+}
+
+.subtittle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 100em;
+  padding: 3rem;
+  background: linear-gradient(180deg, #fafafa 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.09);
+}
+
+#nuevoProyecto {
+  text-align: left;
+  color: black;
+  font-size: 2.6rem;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: bolder;
+}
+
+#Volver {
+  text-align: right;
+  color: black;
+  font-size: 1.8rem;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: bolder;
+  word-wrap: break-word;
+}
+
+/*Contenedor form*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#division {
+  display: flex;
+  margin: 4rem auto;
+  padding: 10px 5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 43px;
+  border: 1px black solid;
+  gap: 77px;
+  justify-content: center;
+}
+
+.selectColor {
+  background-color: white;
+  color: black; /* Color por defecto del texto */
+}
+
+.selectColor option[selected="true"] {
+  background-color: rgba(97, 0,255,1); /* Cambia el color del texto de la opción seleccionada a violeta */
+  color: white;
+}
+
+.form {
+  width: 200vh;
+  height: auto;
+}
+
+.a_completar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2em;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 1000;
+  width: 100%;
+  margin-top: 1em;
+  
+}
+
+.title {
+    display: inline;
+    width: 50vw;
+    align-items: flex-end;
+    text-align: right;
+    
+}
+
+.campo {
+    display: inline;
+    align-items: center;
+    height: 4rem;
+    width: 60%;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 2px #0b0033 solid;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    font-weight: 600;
+    margin-right: 5rem;
+  }
+
+.dates_selector_container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calendar_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 12vw;
+  gap: 2rem;
+}
+
+.calendar_container label {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.urllink{
+  flex: 1; /* Para que el campo de entrada ocupe el espacio restante */
+  width: 40vw; /* Ancho de la etiqueta en em */
+  border-radius: 10px;
+  border: 2px #0b0033 solid;
+  padding: 5px; /* Ajuste de relleno para separar el borde del texto */
+  margin-right: 5rem; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+
+div label {
+  color: black;
+  font-size: 2rem;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+
+
+.checkbox-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 5em;
+}
+
+#asignar {
+  color: black;
+  font-size: 20px;
+  font-family: Urbanist;
+  font-weight: 700;
+  word-wrap: break-word;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba(96.9, 0, 255, 0.54);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  border: 1px white solid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.calendar_container input {
+  width: 100%;
+  margin: 0;
+}
+
+#fecha_fin, #fecha_inicio{
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    
+}
+
+.descripcion_div,
+.titulo_fenomeno_div,
+.titulo_proyecto_div {
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20em;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+#asignar {
+  color: black;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: lowercase;
+  margin-top: 2em;
+}
+
+.checkboxCaja {
+  background-color: rgba(97, 0, 255, 1);
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.añadirRecursos {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 800;
+  color: #0b0033;
+  padding-top: 5rem;
+}
+
+.input-url {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2em;
+  padding: 2rem;
+}
+
+.input-url span {
+  width: 3rem;
+  height: 3rem;
+}
+
+.input-url span:hover {
+  cursor: pointer;
+}
+
+#pdfForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.urllink {
+  height: 3rem;
+  width: 55%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em 5em;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10rem;
+  margin-top: 3em;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: 700;
+  width: 100%;
+  height: auto;
+}
+
+#crear-button {
+  font-weight: 600;
+  width: 15rem;
+  padding: 12px;
+  color: white;
+  background: rgba(96.9, 0, 255, 0.54);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  border-radius: 15px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 3.5em;
+}
+
+#crear-button:hover {
+  width: 15rem;
+  padding: 12px;
+  color: whitesmoke;
+  background: rgba(96.9, 0, 255, 0.8);
+  box-shadow: 6px 6px 6px -1px rgba(11, 0, 51, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 3.5em;
+}
+
+#cancelar-button {
+  font-weight: 600;
+  width: 15rem;
+  padding: 12px;
+  background-color: white;
+  color: #ff7000;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  border-radius: 15px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 3.5em;
+}
+
+#cancelar-button:hover {
+  width: 15rem;
+  padding: 12px;
+  color: whitesmoke;
+  background: rgba(96.9, 0, 255, 0.8);
+  box-shadow: 6px 6px 6px -1px rgba(11, 0, 51, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 3.5em;
+}
+
+.estudianteLabel {
+  font-size: 2rem;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  color: black;
+  border-bottom: 1px rgba(0, 0, 0, 0.52) solid;
+  font-weight: bolder 2px;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  background-color: rgba(246, 246, 246, 0.36);
+  z-index: 99999;
+}
+
+.modalContainer {
+  background-color: white;
+  width: 40%;
+  max-height: 60%;
+  overflow-y: scroll;
+  margin: auto;
+  box-shadow: 0px 38px 90px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 2px #0b0033 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.modalTitle {
+  color: black;
+  font-size: 4rem;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.student_slot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.student_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.close-modal {
+  align-self: flex-end;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.close-modal:hover {
+  cursor: pointer;
+}

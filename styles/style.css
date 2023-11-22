@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Urbanist:wght@100&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /*1rem=10px*/
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-image: url(../img/background_book.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container {
+    color: rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+    max-width: 40rem;
+    width: 100%;
+    
+}
+
+.logo_ed {
+    max-width: 100%;
+}
+
+.formulario_login {
+    margin-top: 2rem;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 0.1rem solid rgba(102, 102, 102, 1);
+    border-radius:0.5rem;
+    
+}
+
+input:hover{
+    border: 0.1rem solid rgba(115, 37, 241, 1);
+    
+}
+
+/*Link olvidé contraseña*/
+
+.forgot_password {
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #210FED;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.forgot_password:hover{
+    text-decoration: underline;
+}
+
+/*Botones*/
+
+button {
+    background-color: rgba(115, 37, 241, 1);
+    color: #fff;
+    border: none;
+    border-radius:  2rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    gap: 1rem;
+    width: 100%;
+    
+}
+
+button:hover {
+    background-color: rgba(115, 37, 241, 1);
+}
+
+/*Campo no tengo Usuario - Registro*/
+
+.noTengoCuenta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.8em;
+    gap: 1em;
+    padding: 2rem;
+}
+
+.sinCuentaP{
+    display: inline;
+
+}
+
+.registroNuevo{
+    text-decoration: none;
+    color: #210FED;
+}
+
+/*Boton de Inicio con Google*/
+
+
+.google_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#google_login_button {
+    display: flex;
+    align-items: center;
+    background-color: #D8D8D8;
+    color: #000;
+    border: none;
+    border-radius:  2rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+   
+}
+
+#google_login_button:hover {
+    background-color: rgba(115, 37, 241, 1);
+}
+
+.google_logo {
+    width: 3rem; 
+    height: 3rem;
+    margin-right: 1rem;
+    margin-left:4rem;
+    background-color: #D8D8D8; 
+}

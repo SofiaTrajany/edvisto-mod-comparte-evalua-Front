@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="short cut icon" href="./img/favicon.ico">
+    <title>Ed Visto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box_logo">
+            <img src="./img/logoEdVisto.png" alt="logo Ed Visto" class="logo_ed">
+        </div>
+        <form action="#" id="login_form" name="formulario">
+            <div class="formulario_login">
+                <input name="correo" placeholder="Usuario" id="email" type="email"
+                    required minlength="8" maxlength="32" class="campoCompletar">
+                <input name="password" placeholder="Contraseña" id="password" type="password"
+                    required minlength="8" maxlength="16" class="campoCompletar" >
+                <a href="#" id="forgot_password_link" class="forgot_password">¿Olvidaste tu contraseña?</a>
+                <button type="submit" id="login_button" onclick="ingresarTradicional()">INICIAR SESION</button>
+            </div>
+        </form> 
+        <div class="noTengoCuenta">
+            <p class="sinCuentaP"> No tienes una cuenta?</p> 
+            <a href="./pages/newUser.html" class="registroNuevo">Regístrate</a>
+        </div>      
+                <div class="google_login">
+                    <button id="google_login_button">
+                        <img src="./img/logo_google.svg" alt="Logo de Google" class="google_logo">
+                        Iniciar Sesión con Google
+                    </button>
+                </div>
+     
+    </div>
+    <script src="./Js/main.js"></script>
+</body>
+</html>

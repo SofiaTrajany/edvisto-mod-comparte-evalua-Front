@@ -1,0 +1,56 @@
+.observaciones-contenedor {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	min-height: 9vh;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-top: 1rem;
+	align-items: flex-start;
+	padding: 1rem;
+	max-height: 10vh;
+	overflow-y: scroll;
+}
+
+.observaciones-contenedor h2 {
+	font-size: 1rem;
+	font-weight: normal;
+	margin-top: 0.5rem;
+}
+
+.observaciones-contenedor p {
+	min-height: 90%;
+}
+
+#nombreDocente {
+	width: 20vw;
+	height: 43px;
+	padding: 2px;
+	border-color: none;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
+	align-items: flex-start;
+	padding: 6px 23px;
+	gap: 23px;
+	background: #ffffff;
+	border-radius: 13.5237px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	font-style: italic;
+	-webkit-border-radius: 13.5237px;
+	-moz-border-radius: 13.5237px;
+	-ms-border-radius: 13.5237px;
+	-o-border-radius: 13.5237px;
+}
+
+.submit-container {
+	width: 100%;
+	max-width: 30vw;
+	align-content: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}

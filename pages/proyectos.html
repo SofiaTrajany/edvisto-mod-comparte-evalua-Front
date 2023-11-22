@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/proyectos.css" />
+    <link rel="short cut icon" href="../img//favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Ed Visto - Proyectos Profesor</title>
+  </head>
+  <body>
+    <header>
+      <header>
+        <nav class="welcome-banner">
+          <nav>
+            <picture>
+              <a href="../index.html"
+                ><img
+                  src="../img/logoEdVisto.png"
+                  alt="Logo Ed Visto"
+                  class="logoedv"
+              /></a>
+            </picture>
+          </nav>
+          <div class="divSaludo">
+            <p class="saludoPerfil">
+              <strong>¡Hola, <span id="nombreUsuario"></span>!</strong>
+            </p>
+          </div>
+        </nav>
+      </header>
+    </header>
+
+    <div class="subtittle">
+      <div id="nuevoProyecto">Nuevo Proyecto</div>
+      <div id="Volver"><a href="./misClases.html"> ← Volver</a></div>
+    </div>
+    <div class="container">
+      <form action="#" class="form">
+        <select
+          name="curso"
+          id="division"
+          class="selectColor"
+          onchange="cambiarColor()"
+        >
+          <option value="selecciona">Seleccionar Curso</option>
+          <option value="2A">SegundoA</option>
+          <option value="2B">SegundoB</option>
+          <option value="3A">TercerA</option>
+          <option value="3B">TercerB</option>
+          <option value="4A">CuartoA</option>
+          <option value="4B">CuartoB</option>
+          <option value="5A">QuintoA</option>
+          <option value="5B">QuintoB</option>
+        </select>
+        <div class="a_completar">
+          <div class="titulo_proyecto_div title">
+            <label class="rotulo" for="titulo-proyecto">NOMBRE DEL PROYECTO:</label>
+              <input
+              class="campo"
+              id="titulo-proyecto"
+              name="titulo-proyecto"
+              type="text"
+              required
+             />
+          </div>
+          <div class="titulo_fenomeno_div title">
+            <label class="rotulo" for="titulo_fenomeno">TÍTULO DE FENÓMENO:</label>
+              <input
+              class="campo"
+              id="titulo_fenomeno"
+              name="titulo_fenomeno"
+              type="text"
+              required
+            />
+          </div>
+          <div class="descripcion_div title">
+            <label class="rotulo" for="descripcion">DESCRIPCIÓN:</label>
+            <input
+              class="campo campo_descripcion"
+              id="descripcion"
+              name="descripcion"
+              type="text"
+              maxlength="500"
+            />
+          </div>
+        </div>
+        <div class="checkbox-container">
+          <button id="asignar" class="assign_button">ASIGNAR</button>
+        </div>
+        <div class="dates_selector_container">
+          <div class="calendar_container">
+            <label for="fecha_inicio">Fecha de inicio:</label>
+            <input type="date" id="fecha_inicio" name="fecha_inicio" />
+          </div>
+          <div class="calendar_container">
+            <label for="fecha_fin">Fecha de finalizacion:</label>
+            <input type="date" id="fecha_fin" name="fecha_fin" />
+          </div>
+        </div>
+
+        <div id="pdfForm">
+          <h4 class="añadirRecursos">Añadir recursos para los estudiantes</h4>
+          <div class="input-url">
+            <input class="urllink" type="text" id="urllink" name="urllink" placeholder="Copia url">
+            <span class="material-symbols-outlined"> attach_file </span>
+            <span class="material-symbols-outlined"> link </span>
+            <span class="material-symbols-outlined"> add_to_drive </span>
+            <span class="material-symbols-outlined"> image </span>  
+          </div> 
+        </div>
+        <div class="button-container">
+          <button id="crear-button" onclick="enviarInformacion()">
+            Guardar
+          </button>
+          <button id="cancelar-button" onclick="cancelarAccion()">
+            Cancelar
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <section class="modal hide">
+      <div class="modalContainer">
+        <a class="close-modal">
+          <span class="material-symbols-outlined"> cancel </span>
+        </a>
+        <h2 class="modalTitle">Asignar a:</h2>
+        <div class="student_list">
+          <div class="student_slot">
+            <label for="estudiante" class="estudianteLabel">Estudiante</label>
+            <input
+              type="checkbox"
+              id="estudiante"
+              name="estudiante"
+              class="estudianteBox"
+            />
+          </div>
+          <div class="student_slot">
+            <label for="estudiante" class="estudianteLabel">Estudiante</label>
+            <input
+              type="checkbox"
+              id="estudiante"
+              name="estudiante"
+              class="estudianteBox"
+            />
+          </div>
+
+          <div class="student_slot">
+            <label for="estudiante" class="estudianteLabel">Estudiante</label>
+            <input
+              type="checkbox"
+              id="estudiante"
+              name="estudiante"
+              class="estudianteBox"
+            />
+          </div>
+          <div class="student_slot">
+            <label for="estudiante" class="estudianteLabel">Estudiante</label>
+            <input
+              type="checkbox"
+              id="estudiante"
+              name="estudiante"
+              class="estudianteBox"
+            />
+          </div>
+          <div class="student_slot">
+            <label for="estudiante" class="estudianteLabel">Estudiante</label>
+            <input
+              type="checkbox"
+              id="estudiante"
+              name="estudiante"
+              class="estudianteBox"
+            />
+          </div>
+          <div class="student_slot">
+            <label for="estudiante" class="estudianteLabel">Estudiante</label>
+            <input
+              type="checkbox"
+              id="estudiante"
+              name="estudiante"
+              class="estudianteBox"
+            />
+          </div>
+          <div class="student_slot">
+            <label for="estudiante" class="estudianteLabel">Estudiante</label>
+            <input
+              type="checkbox"
+              id="estudiante"
+              name="estudiante"
+              class="estudianteBox"
+            />
+          </div>
+          <div class="student_slot">
+            <label for="estudiante" class="estudianteLabel">Estudiante</label>
+            <input
+              type="checkbox"
+              id="estudiante"
+              name="estudiante"
+              class="estudianteBox"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../Js/proyectos.js"></script>
+  </body>
+</html>
