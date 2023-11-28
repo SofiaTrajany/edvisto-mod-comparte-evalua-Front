@@ -110,13 +110,11 @@ function regularLogin() {
       "Content-Type": "application/json",
     },
     body: data,
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.status === 200) {
-        console.log(data);
-      } else {
-        alert("Usuario o contraseña incorrectos");
-      }
-    });
+  }).then((response) => {
+    if (response.status === 200) {
+      console.log(response);
+    } else {
+      alert("Usuario o contraseña incorrectos");
+    }
+  });
 }
