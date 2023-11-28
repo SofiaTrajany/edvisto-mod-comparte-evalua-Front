@@ -1,32 +1,4 @@
-// // Incluir la biblioteca de Google Sign-In
 
-// const users = loginUser(data).then((data) =>{
-//     console.log(data);
-//     if (data === "Welcome"{
-//         console.log("login");
-//     }else {
-//         alert("Usuario o contraseña incorrectos");
-//     }
-// });
-
-// function ingresarTradicional() {
-//     let email = document.getElementById('email').value;
-//     let password = document.getElementById('password').value;
-
-//     // Si la validación es exitosa, redirige al usuario a la página de inicio
-//     if (email === 'usuario@example.com' && password === 'contraseña') {
-//         alert('Inicio de sesión exitoso');
-
-//     } else {
-//         alert('Usuario o contraseña incorrectos');
-//     }
-// }
-
-// document.getElementById('google_login_button').addEventListener('click', function () {
-
-//     alert('Iniciando sesión con Google...');
-
-// });
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
 
@@ -88,33 +60,51 @@ googleLoginButton.addEventListener("click", function (e) {
   loginWithGoogle(e);
 });
 
-regularLoginButton.addEventListener("click", function (e) {
-  e.preventDefault();
-  regularLogin(e);
-});
+//regularLoginButton.addEventListener("click", function (e) {
+ // e.preventDefault();
+ // regularLogin(e);
+//});
 
 function regularLogin() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
 
-  const data = JSON.stringify({
+  const data = {
     email: email,
     password: password,
-  });
+  };
 
-  console.log(data);
 
-  fetch("http://localhost:3000/api/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: data,
-  }).then((response) => {
-    if (response.status === 200) {
-      console.log(response);
+  const users = loginUser(data).then((data) => {
+    if (data === 'Welcome teacher') {
+      console.log('login');
+      location.href = './pages/misClases.html';
+    } else if (data === 'Welcome student') {
+      // location.href = “./pages/mis.html”;
+      //  ir a inicio para alumnos
     } else {
-      alert("Usuario o contraseña incorrectos");
+      alert('Usuario y/o contraseña equivocados');
     }
-  });
+  }); 
 }
+
+async function loginUser(data) {
+  const response = await fetch('http://localhost:3000/api/login', {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc. 
+    mode: "cors",
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data), // body data type must match “Content-Type” header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+// Asignar la función login al evento 'submit' del formulario
+document
+  .getElementById("login_form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    regularLogin();
+  });
