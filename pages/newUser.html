@@ -1,56 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/newUser.css">
-    <link rel="short cut icon" href="../img/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/newUser.css" />
+    <link rel="short cut icon" href="../img/favicon.ico" />
     <title>Ed Visto Registro</title>
-</head>
-<body>
-    <form  action="" id="registroForm" class="form_register" method="post">
-        <fieldset>
-            <label for="name">
-                <input required class="inline" id="name" type="text" name="Name" placeholder="Nombre"/>
-            </label>
-            <label for="surname">
-                <input required class="inline" id="surname" type="text" name="Surname" placeholder="Apellido"/>
-            </label>
-            <label for="birthday" class="inline">Fecha de Nacimiento
-                <input  type="date" id="birthday" name="birthday" placeholder="Fecha de Nacimiento" required>
-            </label>
-            <label for="email">
-                <input required class="inline" id="email" type="email" name="Email" placeholder="Correo electrónico"/>
-            </label>
-            <label for="password">
-                <input required class="inline" id="password" type="password" pattern="[a-z0-5]{8,}" name="Password" placeholder="Contraseña"/>
-            </label>
-            <label for="repeat_password">
-                <input required class="inline" id="repeat_password" type="password" pattern="[a-z0-5]{8,}" name="Repeat-Password" placeholder="Repetir Contraseña"/>
-            </label>
-            <label for="security-question" >
-                <select id="security-question" class="inline" >
-                  <option value="">Seleccionar Pregunta de Seguridad</option>
-                  <option value="1">Nombre de tu mascota</option>
-                  <option value="2">Libro preferido</option>
-                  <option value="3">Nombre de tu abuelo</option>
-                </select>
-            </label>
-            <label for="security-answer">
-                <input required class="inline" id="security-answer" type="text" name="Security-Answer" placeholder="Respuesta de seguridad"/>
-            </label>
-            <label><input type="radio" name="Rol" class="alumno"/> Soy Alumno</label>
-            <label><input type="radio"name="Rol" class="docente"/> Soy Docente</label>
-            <label for="terms-and-conditions">
-                <input id="terms-and-conditions" type="checkbox" required /> He leído y Acepto los <a href="#">Términos y Condiciones</a>
-            </label>
-        </fieldset>
-        <div class="divBotonRegistrar">
-            <input class="registrarse" type="submit" value="REGISTRARSE" onclick="registar()"/>
-        </div>
-
-
+  </head>
+  <body>
+    <form id="registroForm" class="form_register" method="post">
+      <fieldset>
+        <label for="name">
+          <input
+            required
+            class="inline"
+            id="name"
+            type="text"
+            name="Name"
+            placeholder="Nombre"
+          />
+        </label>
+        <label for="surname">
+          <input
+            required
+            class="inline"
+            id="surname"
+            type="text"
+            name="Surname"
+            placeholder="Apellido"
+          />
+        </label>
+        <label for="birthday" class="inline"
+          >Fecha de Nacimiento
+          <input
+            type="date"
+            id="birthday"
+            name="birthday"
+            placeholder="Fecha de Nacimiento"
+            required
+          />
+        </label>
+        <label for="email">
+          <input
+            required
+            class="inline"
+            id="email"
+            type="email"
+            name="Email"
+            placeholder="Correo electrónico"
+          />
+        </label>
+        <label for="password">
+          <input
+            required
+            class="inline"
+            id="password"
+            type="password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).*$"
+            name="Password"
+            placeholder="Contraseña"
+          />
+        </label>
+        <label for="repeat_password">
+          <input
+            required
+            class="inline"
+            id="repeat_password"
+            type="password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).*$"
+            name="Repeat-Password"
+            placeholder="Repetir Contraseña"
+          />
+        </label>
+        <label for="security-question">
+          <select id="security-question" class="inline">
+            <option value="">Seleccionar Pregunta de Seguridad</option>
+            <option value="Nombre de tu mascota">Nombre de tu mascota</option>
+            <option value="Libro preferido">Libro preferido</option>
+            <option value="Nombre de tu abuelo">Nombre de tu abuelo</option>
+          </select>
+        </label>
+        <label for="security-answer">
+          <input
+            required
+            class="inline"
+            id="security-answer"
+            type="text"
+            name="Security-Answer"
+            placeholder="Respuesta de seguridad"
+          />
+        </label>
+        <label
+          ><input type="radio" name="Rol" class="alumno" value="alumno" /> Soy
+          Alumno</label
+        >
+        <label
+          ><input type="radio" name="Rol" class="docente" value="docente" /> Soy
+          Docente</label
+        >
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required /> He leído
+          y Acepto los <a href="#">Términos y Condiciones</a>
+        </label>
+      </fieldset>
+      <div class="divBotonRegistrar">
+        <button class="registrarse" type="submit">REGISTRARSE</button>
+      </div>
     </form>
-<script src="../Js/newUser.js"></script>
-</body>
+    <script src="../Js/newUser.js"></script>
+  </body>
 </html>
