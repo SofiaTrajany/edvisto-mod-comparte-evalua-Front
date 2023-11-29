@@ -54,7 +54,7 @@ a {
   }
   
   .saludoPerfil {
-	font-size: 1.8em;
+	font-size: 2em;
 	font-weight: 800;
   }
 
@@ -66,7 +66,7 @@ a {
 	padding-bottom: 3rem;
 	font-family: 'urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: 600;
-	font-size: 3em;
+	font-size: 4em;
 }
 
 .input-check{
@@ -82,7 +82,7 @@ width: 30vw;
 justify-content: center;
 text-align: center;
 margin-top: 2em;
-margin-bottom: 2em;
+margin-bottom: 1.2em;
 border: #0b0033 2px solid;
 border-radius: 20rem;
 padding: 1.2rem;
@@ -109,12 +109,12 @@ margin: 0 auto;
 
 #nombreDocente {
 	width: 20vw;
-	height: 43px;
-	padding: 2px;
+	height: 4.3rem;
+	padding: 3rem;
 	border-color: none;
 	display: flex;
 	margin: 4rem auto;
-	padding: 10px 5rem;
+	padding: 1rem 5rem;
 	background: rgba(255, 255, 255, 0.8);
 	border-radius: 43px;
 	border: 1px black solid;
@@ -138,30 +138,83 @@ margin: 0 auto;
 	
 }
 
+.posicion-calificaciones{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.contenedor-calificaciones{
+	width: 40vw;
+	height: 35vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem;
+	background: rgba(28, 187, 196, 0.3);
+	border-radius: 43px;
+
+}
+
 .observaciones-contenedor {
 	width: 90%;
 	display: flex;
+	color: black;
 	flex-direction: column;
 	background-color: white;
 	min-height: 9vh;
 	border-radius: 20px;
 	margin: 0 auto;
-	margin-top: 1rem;
 	align-items: flex-start;
-	padding: 1rem;
-	max-height: 10vh;
+	padding: 0.5rem;
+	max-height: 15vh;
 	overflow-y: scroll;
+	font-family: 'urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 900;
 }
 
 .observaciones-contenedor h2 {
 	font-size: 1rem;
 	font-weight: normal;
 	margin-top: 0.5rem;
+	font-family: 'urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 900;
 }
 
 .observaciones-contenedor p {
 	min-height: 90%;
+	font-family: 'urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 900;
 }
 
+.calificaciones_title{
+	font-family: 'urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 900;
+	font-size: 3.3rem;
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+}
 
+.margin-promedio{
+	width: 100%;
+	font-family: 'urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	margin-top:1rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	
+}
+
+.input-range{
+	width: 80%;
+	margin: 2em;
+	
+}
 

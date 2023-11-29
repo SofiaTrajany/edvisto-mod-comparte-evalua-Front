@@ -60,7 +60,7 @@ a {
   width: 100%;
   height: 100%;
   gap: 100em;
-  padding: 4em;
+  padding: 3rem;
   background: linear-gradient(180deg, #fafafa 0%, rgba(217, 217, 217, 0) 100%);
   box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.09);
 }
@@ -109,12 +109,7 @@ a {
 }
 
 .selectColor option[selected="true"] {
-  background-color: rgba(
-    97,
-    0,
-    255,
-    1
-  ); /* Cambia el color del texto de la opción seleccionada a violeta */
+  background-color: rgba(97, 0,255,1); /* Cambia el color del texto de la opción seleccionada a violeta */
   color: white;
 }
 
@@ -128,12 +123,34 @@ a {
   flex-direction: column;
   align-items: flex-start;
   font-size: 2em;
-  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 1000;
   width: 100%;
-  margin-top: 2em;
+  margin-top: 1em;
+  
 }
+
+.title {
+    display: inline;
+    width: 50vw;
+    align-items: flex-end;
+    text-align: right;
+    
+}
+
+.campo {
+    display: inline;
+    align-items: center;
+    height: 4rem;
+    width: 60%;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 2px #0b0033 solid;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    font-weight: 600;
+    margin-right: 5rem;
+  }
 
 .dates_selector_container {
   display: flex;
@@ -144,25 +161,13 @@ a {
   margin-right: auto;
 }
 
-.a_completar > div {
-  display: inline;
-  margin-bottom: 10px;
-}
-
-.container label {
-  width: 250px;
-  align-items: flex-end;
-  text-align: right;
-  display: inline-block;
-}
-
 .calendar_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 15vw;
-  gap: 1rem;
+  width: 12vw;
+  gap: 2rem;
 }
 
 .calendar_container label {
@@ -170,7 +175,7 @@ a {
   margin-top: 2rem;
 }
 
-.container input {
+.urllink{
   flex: 1; /* Para que el campo de entrada ocupe el espacio restante */
   width: 40vw; /* Ancho de la etiqueta en em */
   border-radius: 10px;
@@ -179,9 +184,6 @@ a {
   margin-right: 5rem; /* Espacio entre la etiqueta y el campo de entrada */
 }
 
-#titulo_proyecto_div {
-  gap: 20em;
-}
 
 div label {
   color: black;
@@ -193,18 +195,7 @@ div label {
   word-wrap: break-word;
 }
 
-.campo {
-  align-items: center;
-  height: 4rem;
-  width: 60%;
-  background: #fafafa;
-  border-radius: 10px;
-  border: 2px #0b0033 solid;
-  margin-top: 4rem;
-  margin-left: 5rem;
-  font-weight: 600;
-  margin-right: 5rem;
-}
+
 
 .checkbox-container {
   width: 100%;
@@ -238,7 +229,18 @@ div label {
   margin: 0;
 }
 
-.descripcion_div {
+#fecha_fin, #fecha_inicio{
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    
+}
+
+.descripcion_div,
+.titulo_fenomeno_div,
+.titulo_proyecto_div {
   display: block;
   justify-content: flex-start;
   align-items: flex-start;
@@ -289,18 +291,16 @@ div label {
 .input-url {
   display: flex;
   align-items: center;
-  width: 15vw;
+  width: 30vw;
   justify-content: space-between;
   text-align: center;
   margin-top: 2em;
-  border: #0b0033 2px solid;
-  border-radius: 20rem;
   padding: 2rem;
 }
 
 .input-url span {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .input-url span:hover {
