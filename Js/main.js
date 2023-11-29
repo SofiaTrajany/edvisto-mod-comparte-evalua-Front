@@ -35,7 +35,8 @@ const provider = new GoogleAuthProvider();
 const googleLoginButton = document.getElementById("google_login_button");
 const regularLoginButton = document.getElementById("login_button");
 
-provider.addScope("127.0.0.1");
+//provider.addScope("127.0.0.1");
+provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 
 const loginWithGoogle = () => {
   signInWithPopup(auth, provider)
