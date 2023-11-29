@@ -20,7 +20,7 @@ const firebaseConfig = {
   projectId: "team-9-back-asp",
   storageBucket: "team-9-back-asp.appspot.com",
   messagingSenderId: "760161682996",
-  appId: "1:760161682996:web:f64b84cb4f3b36b0222c61",
+  appId: "760161682996:web:f64b84cb4f3b36b0222c61",
 };
 
 console.log(firebaseConfig);
