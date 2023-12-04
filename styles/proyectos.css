@@ -252,6 +252,7 @@ div label {
 .calendar_container input {
   width: 100%;
   margin: 0;
+ 
 }
 
 #fecha_fin,
@@ -449,17 +450,19 @@ div label {
   bottom: 0;
   background-color: rgba(246, 246, 246, 0.36);
   z-index: 99999;
+  backdrop-filter: blur(50px);
+  padding-top: 15rem;
 }
 
 .modalContainer {
-  background-color: white;
+  background-color: rgb(246, 246, 246);
   width: 40%;
   max-height: 60%;
   overflow-y: scroll;
   margin: auto;
   box-shadow: 0px 38px 90px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  border: 2px #0b0033 solid;
+  border: 2px rgba(11, 0, 51, 1) solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -488,6 +491,7 @@ div label {
 
 .hide {
   display: none;
+
 }
 
 .student_list {
@@ -500,8 +504,11 @@ div label {
   align-self: flex-end;
   padding-right: 1rem;
   padding-top: 1rem;
+  
 }
 
 .close-modal:hover {
   cursor: pointer;
 }
+
+

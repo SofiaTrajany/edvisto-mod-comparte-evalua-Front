@@ -36,7 +36,7 @@ export class StudentCard extends HTMLElement {
 								<label
 									for="comunicacion"
 									class="qualification comunicacion"
-									>Comunicación</label
+									>Comunicación     </label
 								>
 								<input
 								style="width: 50%;"

@@ -96,6 +96,7 @@ li:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+	font-family: 'Urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #division {
@@ -108,6 +109,8 @@ li:hover{
     gap: 77px;
     justify-content: center;
     font-size: 1.6rem;
+	font-family: 'Urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
 }
 
 .botomLinkCalif:hover{
@@ -138,9 +141,15 @@ li:hover{
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2%;
+	font-size: 1.6rem;
+	font-family: 'Urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
 }
 
 .top-container {
+	font-size: 1.6rem;
+	font-family: 'Urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
 	width: 92%;
 	border-radius: 25px;
 	min-height: 10vh;
@@ -149,6 +158,7 @@ li:hover{
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2%;
+	background:  rgba(28, 187, 196, 0.30);
 
 	& > p {
 		background-color: #fdffff;
@@ -185,12 +195,18 @@ li:hover{
 	height: 100%;
 	padding: 2% 3%;
 	margin-top: 1rem;
+	font-size: 1.6rem;
+	font-family: 'Urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
 }
 .qualifications-container {
 	width: 100%;
 	min-height: 33vh;
 	display: flex;
 	justify-content: space-between;
+	font-size: 1.6rem;
+	font-family: 'Urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
 }
 .left-container {
 	display: flex;
@@ -199,6 +215,9 @@ li:hover{
 	align-items: center;
 	gap: 30px;
 	min-width: 50%;
+	font-size: 1.6rem;
+	font-family: 'Urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
 }
 
 .save-container {
@@ -213,6 +232,9 @@ li:hover{
 }
 
 .habilidades-container {
+	font-size: 1.6rem;
+	font-family: 'Urbanist','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -224,7 +246,7 @@ li:hover{
 		width: 80%;
 		height: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content:space-between;
 		align-items: center;
 	}
 	& > div > input {
@@ -291,6 +313,7 @@ li:hover{
 
 .dropdown .active {
 	content: 'hello';
+	
 }
 
 .alert-container {
