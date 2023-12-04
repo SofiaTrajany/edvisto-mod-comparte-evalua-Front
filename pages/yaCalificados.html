@@ -1,79 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/yaCalificados.css" />
+    <link rel="short cut icon" href="../img/favicon.ico" />
+    <title>Ya Calificados</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/yaCalificados.css">
-    <link rel="short cut icon" href="../img/favicon.ico">
-    <title> Ya Calificados </title>
-</head>
-
-<body class="califBody">
+  <body class="califBody">
     <header class="welcome-banner">
-        <img src="../img/logoEdVisto.png" class="logoedv" alt="logoedv">
-        <ul >
-            <li>
-                <a href="../index.html"class="inicio">INICIO</a></li>
-            <li>
-                <a href="./misClases.html"class= "mis_clases">MIS CLASES</a></li>
-         
-        </ul>
-        <picture id="exit">
-            <a href="../index.html" ><img src="../img/exit.svg" alt="Logo Ed Visto" class="salir" ></a>   
-        </picture>
+      <img src="../img/logoEdVisto.png" class="logoedv" alt="logoedv" />
+      <ul>
+        <li>
+          <a href="../index.html" class="inicio">INICIO</a>
+        </li>
+        <li>
+          <a href="./misClases.html" class="mis_clases">MIS CLASES</a>
+        </li>
+      </ul>
+      <picture id="exit">
+        <a href="../index.html"
+          ><img src="../img/exit.svg" alt="Logo Ed Visto" class="salir"
+        /></a>
+      </picture>
     </header>
     <div id="linkAAlumni">
-        <a href="../pages/calificaciones.html" class="botomLinkCalif">No Calificados</a>
-        <a href="../pages/yaCalificados.html" class="botomLinkCalif">Calificados</a>
+      <a href="../pages/calificaciones.html" class="botomLinkCalif"
+        >No Calificados</a
+      >
+      <a href="../pages/yaCalificados.html" class="botomLinkCalif"
+        >Calificados</a
+      >
     </div>
     <div id="seleccionCurso">
-        <form action="#">
-            <select name="curso" id="division">
-                <option value="selecciona">Seleccionar Curso</option>
-                <option value="2A">SegundoA</option>
-                <option value="2B">SegundoB</option>
-                <option value="3A">TercerA</option>
-                <option value="3B">TercerB</option>
-                <option value="4A">CuartoA</option>
-                <option value="4B">CuartoB</option>
-                <option value="5A">QuintoA</option>
-                <option value="5B">QuintoB</option>
-            </select>
-        </form>
+      <form action="#">
+        <select name="curso" id="division">
+          <option value="selecciona">Seleccionar Curso</option>
+          <option value="SegundoA">SegundoA</option>
+          <option value="SegundoB">SegundoB</option>
+          <option value="TercerA">TercerA</option>
+          <option value="TercerB">TercerB</option>
+          <option value="CuartoA">CuartoA</option>
+          <option value="CuartoB">CuartoB</option>
+          <option value="QuintoA">QuintoA</option>
+          <option value="QuintoB">QuintoB</option>
+        </select>
+      </form>
     </div>
-    <div class="container_listado">
-        <div class="estudiante">
-            <div class="nombre-apellido">
-                <strong>Nombre Apellido</strong>
-            </div>
-            <div class="trabajo-realizado">
-                Trabajo Realizado 1
-            </div>
-            <button class="ver-trabajo-btn" onclick="abrirModal('Trabajo 1')">Ver Trabajo</button>
-        </div>
-
-        <div class="estudiante">
-            <div class="nombre-apellido">
-                <strong>Nombre Apellido</strong>
-            </div>
-            <div class="trabajo-realizado">
-                Trabajo Realizado 2
-            </div>
-            <button class="ver-trabajo-btn" onclick="abrirModal('Trabajo 2')">Ver Trabajo</button>
-        </div>
-
-    </div>
-
+    <div class="container_listado"></div>
     <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
-            <p id="modalContent"></p>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <p id="modalContent"></p>
+      </div>
     </div>
-
-</body>
-<script type="module" src="../Js/yaCalificados.js"></script>
-
+  </body>
+  <script type="module" src="../Js/yaCalificados.js"></script>
 </html>

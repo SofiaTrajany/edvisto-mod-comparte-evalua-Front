@@ -19,6 +19,7 @@ body {
   background-size: cover;
   width: 100vw;
   min-height: 100vh;
+  
 }
 
 a {
@@ -59,7 +60,6 @@ a {
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  gap: 100em;
   padding: 3rem;
   background: linear-gradient(180deg, #fafafa 0%, rgba(217, 217, 217, 0) 100%);
   box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.09);
@@ -109,8 +109,33 @@ a {
 }
 
 .selectColor option[selected="true"] {
-  background-color: rgba(97, 0,255,1); /* Cambia el color del texto de la opción seleccionada a violeta */
+  background-color: rgba(
+    97,
+    0,
+    255,
+    1
+  ); /* Cambia el color del texto de la opción seleccionada a violeta */
   color: white;
+}
+
+.alert {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 25%;
+  background-color: white;
+  width: 50vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #0b0033;
+  border-radius: 10px;
+  border: 2px #0b0033 solid;
+}
+
+.close-alert {
+  align-self: flex-end;
 }
 
 .form {
@@ -121,36 +146,39 @@ a {
 .a_completar {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   font-size: 2em;
-  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "urbanist", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
   font-weight: 1000;
   width: 100%;
-  margin-top: 1em;
-  
 }
 
 .title {
-    display: inline;
-    width: 50vw;
-    align-items: flex-end;
-    text-align: right;
-    
+  display: inline;
+  width: 50vw;
+  align-items: flex-end;
 }
 
 .campo {
-    display: inline;
-    align-items: center;
-    height: 4rem;
-    width: 60%;
-    background: #fafafa;
-    border-radius: 10px;
-    border: 2px #0b0033 solid;
-    margin-top: 4rem;
-    margin-left: 5rem;
-    font-weight: 600;
-    margin-right: 5rem;
-  }
+  display: inline;
+  align-items: center;
+  height: 4rem;
+  width: 60%;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 2px #0b0033 solid;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  margin-right: 5rem;
+  padding: 10px;
+}
+.campo_descripcion {
+  min-height: 200px;
+}
 
 .dates_selector_container {
   display: flex;
@@ -175,7 +203,7 @@ a {
   margin-top: 2rem;
 }
 
-.urllink{
+.urllink {
   flex: 1; /* Para que el campo de entrada ocupe el espacio restante */
   width: 40vw; /* Ancho de la etiqueta en em */
   border-radius: 10px;
@@ -183,7 +211,6 @@ a {
   padding: 5px; /* Ajuste de relleno para separar el borde del texto */
   margin-right: 5rem; /* Espacio entre la etiqueta y el campo de entrada */
 }
-
 
 div label {
   color: black;
@@ -194,8 +221,6 @@ div label {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-
-
 
 .checkbox-container {
   width: 100%;
@@ -229,13 +254,13 @@ div label {
   margin: 0;
 }
 
-#fecha_fin, #fecha_inicio{
-    border-radius: 15px;
-    text-align: center;
-    align-items: center;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    
+#fecha_fin,
+#fecha_inicio {
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .descripcion_div,
